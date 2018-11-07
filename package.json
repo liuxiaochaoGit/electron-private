@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "A framework for electron initialization！",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "packager": "electron-packager . project --darwin --out ./OutApp --electron-version=2.0.0 --overwrite --icon=./img/app.icns",
+    "packagerWin": "electron-packager . project --platform=win32 --arch=x64 --out ./OutApp --electron-version=2.0.0 --overwrite --icon=./img/icon.ico",
+    "packagerlin": "electron-packager . project --platform=linux --arch=x64 --out ./OutApp --electron-version=2.0.0 --overwrite --icon=./img/app.icns"
+  },
+  "keywords": [
+    "Electron",
+    "start"
+  ],
+  "author": "lzc",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.0",
+    "grunt": "^1.0.3",
+    "grunt-electron-installer": "^2.1.0"
+  },
+  "dependencies": {}
+}
